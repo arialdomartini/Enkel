@@ -1,0 +1,19 @@
+group 'it.bebox.enkellang'
+version '0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'it.bebox.enkel.Program'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
